@@ -1,0 +1,16 @@
+{% extends 'base.html'%}
+{% block title%}
+Главная страница
+{% endblock%}
+{% block body%}
+<div class="container mt-5">
+    <h1>Анкета</h1>
+    <form method="post">
+        <input type="text" name="name" id="name" class="form-control" placeholder="Введите имя">
+        <input type="text" name="surname" id="surname" class="form-control"placeholder="Введите фамилию">
+        <input type="text" name="city" id="city" class="form-control" placeholder="Введите город проживания">
+        <input type="text" name="sex" id="sex" class="form-control" placeholder="Введите пол">
+        <input type="submit" class="btn btn-seccess" value="Отправить">
+    </form>
+</div>
+{% endblock%}
