@@ -1,0 +1,25 @@
+{% extends 'base.html'%}
+{% block title%}
+Страница о нас
+{% endblock%}
+{% block body%}
+<div class="portfolio-wrap">
+<div class="portfolio-item">
+<div class="portfolio-item-wrap">
+<a href="bla-bla-bla" onclick="return false;">
+<div class="portfolio-item-inner">
+<div class="portfolio-heading">
+<h3>Ваш результат: {{result}} баллов</h3>
+</div>
+<ul>
+<li>{{expert_review}}</li>
+</ul>
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="click-mouse">
+    <h2 class="quiz-question"> Наведите мышкой на результат</h2>
+</div>
+{% endblock%}
