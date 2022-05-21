@@ -5,7 +5,7 @@ import requests
 
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:123@localhost/diplom'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://tkueqtax:2aRKblL6iOnx6h_QDXLdoEPmp0BskzxQ@heffalump.db.elephantsql.com/tkueqtax'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
@@ -86,11 +86,14 @@ def index():
         return render_template("index.html")
 
 
-
-
 @app.route('/result')
-def about():
+def result():
     return render_template("result.html")
+
+
+@app.route('/about')
+def about():
+    return render_template("about.html")
 
 
 def calculate_result(recieved_dict):
